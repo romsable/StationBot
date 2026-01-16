@@ -1,6 +1,6 @@
-login = "R.sable"
-password = "dYP-Q9b-vJR-b26"
-telegram_bot_token = "8329610187:AAH0EiIugvfLoIqEnxJenq-Ext1FgRitsJo"
+login = "YANDEX_LOGIN"        # Yandex username
+password = "YANDEX_PASSWORD"  # Yandex password (or leave for OAuth)
+telegram_bot_token = "TG_BOT_TOKEN"
 
 # To disable proxy: proxy = None
 proxy = None
