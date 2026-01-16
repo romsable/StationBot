@@ -1,11 +1,11 @@
-from telegram.ext import Updater, MessageHandler, Filters
+from telegram.ext import Updater, MessageHandler, filters
 from pytube import YouTube
-
-import logging
-logging.basicConfig(level=logging.DEBUG, filename='logs.txt')
 
 from yandex import sendToScreen
 import config
+
+import logging
+logging.basicConfig(level=logging.DEBUG, filename='logs.txt')
 
 
 last_url = ""
@@ -65,7 +65,7 @@ def message_recieved(bot, update):
 
 updater = Updater(token=config.telegram_bot_token, request_kwargs=config.proxy)
 
-message_handler = MessageHandler(Filters.all, message_recieved)
+message_handler = MessageHandler(filters.ALL, message_recieved)
 updater.dispatcher.add_handler(message_handler)
 
 print("Start polling...")
